@@ -55,6 +55,7 @@ ExecStartPre=-/usr/bin/docker rm -f pipe-pop
 
 ExecStart=/usr/bin/docker run \\
   --name pipe-pop \\
+  --restart=always \\
   --network host \\
   -v /root/pipe/download_cache:/data \\
   pipe-node \\
