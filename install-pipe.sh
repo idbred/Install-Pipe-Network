@@ -83,3 +83,5 @@ systemctl enable pipe
 systemctl restart pipe
 
 echo "✅ Pipe Node đã được cài đặt thành công!"
+docker exec -it pipe-pop /usr/local/bin/pop --status
+
